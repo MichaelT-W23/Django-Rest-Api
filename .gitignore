@@ -1,0 +1,5 @@
+django_rest_api/settings.py
+
+notes_app/management/commands/populate_data.py
+
+.env
