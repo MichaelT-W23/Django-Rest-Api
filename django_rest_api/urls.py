@@ -17,6 +17,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from notes_app.routes import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home_page, name='home_page'),
+    path('test_db_connection/', views.test_db_connection, name='test_connection'),
+    path('get_users/', views.get_all_users, name='get_all_users'),
+    path('users/register/', views.register_user, name='register_user'),
+    path('users/login/', views.login_user, name='login_user'),
+    path('users/<int:user_id>/notes/', views.get_notes_by_user, name='get_notes_by_user'),
+    path('notes/tag/<str:tag_name>/', views.get_notes_by_tag, name='get_notes_by_tag'),
+    path('users/<int:user_id>/tags/', views.get_all_tags, name='get_all_tags'),
+    path('users/<str:username>/', views.get_user_by_username, name='get_user_by_username'),
 ]
