@@ -1,2 +1,2 @@
-*.min.js linguist-vendored
-*.html linguist-documentation
+*.min.js linguist-vendored=false
+*.html linguist-documentation=false
