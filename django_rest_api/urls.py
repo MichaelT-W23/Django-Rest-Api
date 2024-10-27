@@ -26,8 +26,8 @@ urlpatterns = [
     path('get_users/', views.get_all_users, name='get_all_users'),
     path('users/register/', views.register_user, name='register_user'),
     path('users/login/', views.login_user, name='login_user'),
-    path('users/<int:user_id>/notes/', views.get_notes_by_user, name='get_notes_by_user'),
+    path('notes/users/<int:user_id>/notes/', views.get_notes_by_user, name='get_notes_by_user'),
     path('notes/tag/<str:tag_name>/', views.get_notes_by_tag, name='get_notes_by_tag'),
-    path('users/<int:user_id>/tags/', views.get_all_tags, name='get_all_tags'),
+    path('notes/users/<int:user_id>/tag/', views.get_all_tags, name='get_all_tags'),
     path('users/<str:username>/', views.get_user_by_username, name='get_user_by_username'),
 ]
