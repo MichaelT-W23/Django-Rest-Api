@@ -1,4 +1,4 @@
-#!/Users/michaeltotaro/Django-Rest-Api/venv/bin/python3.12
+#!/Users/michaeltotaro/Django-Rest-Api/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
