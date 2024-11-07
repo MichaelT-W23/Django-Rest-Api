@@ -1,3 +1,5 @@
 notes_app/management/commands/populate_data.py
 
 .env
+
+zappa_settings.json
